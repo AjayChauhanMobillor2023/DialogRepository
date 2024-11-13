@@ -54,7 +54,7 @@ publishing{
                         afterEvaluate{
                                 from (components["release"])
                                 groupId ="com.github.AjayChauhanMobillor2023" // GitHub username
-                                artifactId = "ToasterToast"      // GitHub repository name
+                                artifactId = "LoadingDialogLibrary"      // GitHub repository name
 //                                version = "1.0.0"
                         }
                 }
