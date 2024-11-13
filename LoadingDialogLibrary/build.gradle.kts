@@ -1,7 +1,11 @@
 plugins {
         id("com.android.library")
         id("org.jetbrains.kotlin.android")
+        id ("maven-publish")
 }
+
+group = "com.github.AjayChauhanMobillor2023"  // Use your GitHub username
+version = "1.0.0"
 
 android {
         namespace = "com.example.loadingdialoglibrary"
@@ -41,4 +45,18 @@ dependencies {
         testImplementation("junit:junit:4.13.2")
         androidTestImplementation("androidx.test.ext:junit:1.2.1")
         androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+}
+
+
+publishing{
+        publications{
+                register<MavenPublication>("release"){
+                        afterEvaluate{
+                                from (components["release"])
+                                groupId ="com.github.AjayChauhanMobillor2023" // GitHub username
+                                artifactId = "ToasterToast"      // GitHub repository name
+//                                version = "1.0.0"
+                        }
+                }
+        }
 }
