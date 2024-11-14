@@ -5,6 +5,7 @@ import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.Window
+import android.widget.Toast
 
 object LoadingDialog {
 
@@ -24,6 +25,10 @@ object LoadingDialog {
 
         fun hideDialog(){
                 dialog.dismiss()
+        }
+
+        fun showToast(context : Context,msg :String){
+                Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
         }
 
 }

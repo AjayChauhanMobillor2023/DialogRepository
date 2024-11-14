@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.AjayChauhanMobillor2023"  // Use your GitHub username
-version = "1.0.0"
+version = "1.0.3"
 
 android {
         namespace = "com.example.loadingdialoglibrary"
