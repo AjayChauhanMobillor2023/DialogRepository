@@ -4,11 +4,9 @@ import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.util.Log
 import android.view.Window
-import android.widget.Toast
 
-object LoadingDialog {
+object LoadingDialog1 {
 
         private lateinit var dialog : Dialog
 
@@ -16,7 +14,7 @@ object LoadingDialog {
                 dialog = Dialog(context)
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
                 dialog.setCancelable(false)
-                dialog.setContentView(R.layout.linear_progress_bar)
+                dialog.setContentView(R.layout.progress_bar_dialog)
                 dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         }
 

@@ -4,8 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.dialoglibrary.databinding.ActivityMainBinding
-import com.example.loadingdialoglibrary.LoadingDialog
-import kotlinx.coroutines.Delay
+import com.example.loadingdialoglibrary.LoadingDialog1
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,10 +16,10 @@ class MainActivity : AppCompatActivity() {
                 binding = ActivityMainBinding.inflate(layoutInflater)
                 setContentView(binding.root)
 
-                LoadingDialog.initailDialogBox(this@MainActivity)
+                LoadingDialog1.initailDialogBox(this@MainActivity)
 
                 binding.btnClick.setOnClickListener {
-                        LoadingDialog.apply {
+                        LoadingDialog1.apply {
 
                                 showDialog()
 
