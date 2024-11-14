@@ -10,13 +10,13 @@ import android.widget.Toast
 
 object LoadingDialog {
 
-        lateinit var dialog : Dialog
+        private lateinit var dialog : Dialog
 
         fun initailDialogBox(context : Context){
                 dialog = Dialog(context)
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
                 dialog.setCancelable(false)
-                dialog.setContentView(R.layout.progress_bar_dialog)
+                dialog.setContentView(R.layout.linear_progress_bar)
                 dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         }
 
@@ -28,10 +28,10 @@ object LoadingDialog {
                 dialog.dismiss()
         }
 
-        fun showToast(context : Context,msg :String){
-                Log.e("testtest",msg)
-                Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
-        }
+//        fun showToast(context : Context,msg :String){
+//                Log.e("testtest",msg)
+//                Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+//        }
 
 
 
