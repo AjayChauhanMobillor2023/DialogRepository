@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.util.Log
 import android.view.Window
 import android.widget.Toast
 
@@ -28,7 +29,10 @@ object LoadingDialog {
         }
 
         fun showToast(context : Context,msg :String){
+                Log.e("testtest",msg)
                 Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
         }
+
+
 
 }
