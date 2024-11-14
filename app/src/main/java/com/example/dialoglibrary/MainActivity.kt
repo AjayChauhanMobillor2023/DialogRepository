@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.dialoglibrary.databinding.ActivityMainBinding
-import com.example.loadingdialoglibrary.LoadingDialog1
+import com.example.loadingdialoglibrary.LoadingDialog
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,15 +16,15 @@ class MainActivity : AppCompatActivity() {
                 binding = ActivityMainBinding.inflate(layoutInflater)
                 setContentView(binding.root)
 
-                LoadingDialog1.initailDialogBox(this@MainActivity)
+                LoadingDialog.initailDialogBox1(this@MainActivity)
 
                 binding.btnClick.setOnClickListener {
-                        LoadingDialog1.apply {
+                        LoadingDialog.apply {
 
-                                showDialog()
+                                showDialog1()
 
                                 Handler().postDelayed({
-                                        hideDialog()
+                                        hideDialog1()
                                 },5000)
 
                         }

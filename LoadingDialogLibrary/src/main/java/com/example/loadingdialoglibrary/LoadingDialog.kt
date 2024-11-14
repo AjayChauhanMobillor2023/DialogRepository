@@ -6,11 +6,11 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.Window
 
-object LoadingDialog1 {
+object LoadingDialog {
 
         private lateinit var dialog : Dialog
 
-        fun initailDialogBox(context : Context){
+        fun initailDialogBox1(context : Context){
                 dialog = Dialog(context)
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
                 dialog.setCancelable(false)
@@ -18,11 +18,11 @@ object LoadingDialog1 {
                 dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         }
 
-        fun showDialog(){
+        fun showDialog1(){
                 dialog.show()
         }
 
-        fun hideDialog(){
+        fun hideDialog1(){
                 dialog.dismiss()
         }
 
